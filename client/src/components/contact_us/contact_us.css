@@ -1,0 +1,32 @@
+
+
+
+.c {
+    
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.gird-contact-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px minmax(839px, auto) 60px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+.page-header-contact-us {
+    grid-area: header;
+}
+
+.page-main-contact-us {
+    grid-area: main;
+}
+
+.page-footer-contact-us {
+    grid-area: footer;
+}
+
+header {}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+}
+
+body {
+    background: black;
+}
+
+
+/* .c{
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+} */
+
+.gird{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(810px,auto) 60px ;
+    grid-template-areas: 
+        'main'
+        'footer';
+}
+
+.page-header{
+    grid-area: header;
+}
+
+.page-main {
+    grid-area: main;
+}
+
+.page-footer {
+    grid-area: footer;
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+}

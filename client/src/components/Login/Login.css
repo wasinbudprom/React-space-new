@@ -1,0 +1,34 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+
+.c {
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.gird-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px minmax(839px, auto) 60px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+.page-header-login {
+    grid-area: header;
+}
+
+.page-main-login {
+    grid-area: main;
+}
+
+.page-footer-login {
+    grid-area: footer;
+}
+
+header {}

@@ -1,0 +1,22 @@
+
+.gird-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px minmax(839px, auto) 60px;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+}
+
+.page-header-shop {
+    grid-area: header;
+}
+
+.page-main-shop {
+    grid-area: main;
+}
+
+.page-footer-shop {
+    grid-area: footer;
+}

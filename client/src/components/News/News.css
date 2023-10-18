@@ -1,0 +1,29 @@
+body {
+    background: rgb(0, 0, 0);
+}
+
+
+
+
+.gird-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:70px minmax(839px, auto) 60px;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+}
+
+.page-header-news {
+    grid-area: header;
+}
+
+.page-main-news {
+    grid-area: main;
+}
+
+.page-footer-news {
+    grid-area: footer;
+}
+
